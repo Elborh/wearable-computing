@@ -20,20 +20,21 @@ The contents of the repository include
 
 File | Description
 ---- | -----------
-features.txt | List of all features
+features.txt | List of all feature names
 activity_labels.txt | Links the activity id with activity name
 train/X_train.txt | Features in the training data set
-train/y_train.txt | Activity predictions in the training data set
+train/y_train.txt | Activity values in the training data set
 train/subject_train.txt | Subject who performed the activity in the training data set
 test/X_test.txt | Features in the test data set
-test/y_test.txt | Activity predictions in the test data set
+test/y_test.txt | Activity values in the test data set
 test/subject_train.txt | Subject who performed the activity in the test data set
+features_info.txt | Detailed description of the features in the raw data set
 
 2. The solution files and description:
 
 File | Description
 ---- | -----------
-run_analysis.R | The R solution script which does the processing
+run_analysis.R | The R solution script which does the data processing required by the project requirements
 tidy_grouped_data.txt | The output file containing the tidy data set
 CodeBook.md | The markdown file describing the tidy data set
 README.md | This file
@@ -49,6 +50,7 @@ All data transformation steps converting the original data sets into the output 
 	1. Replace "BodyBody" with "Body"
 	1. Replace "t" prefix with "Time"
 	1. Replace "f" prefix with "Freq"
+	1. Replace "Gravity" suffix with "Grav"
 	1. Replace "-mean()" and "-std()" suffixes with "Mean" and "Std" respectively
 	1. Replace "-X", "-Y", "-Z" suffixes with "X", "Y" and "Z" respectively
 1. Group the data set received on the previous step by subjectId and activity and calculate averages for each variable. Also add the "avg" prefix to all variable lable names.
