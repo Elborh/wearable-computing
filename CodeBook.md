@@ -37,3 +37,5 @@ Mag | The magnitude calculated using the Euclidean norm
 Mean | The mean summarization applied to the original sensor signals
 Std | The standard deviation summarization applied to the original sensor signals
 X / Y / Z | The signal direction in the 3-axial system of coordinates
+
+E.g. "avgTimeBodyAccMagMean" is a numeric variable measuring the average (mean) within each subjectId and activity group of normalized time domain body acceleration magnitude means. 
