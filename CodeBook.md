@@ -9,7 +9,7 @@ According to the [description](http://archive.ics.uci.edu/ml/datasets/Human+Acti
 
 >The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
-The raw data was then cleaned and transformed according to the steps specified in the Transformation section of README file.
+The raw data was then cleaned and transformed according to the steps specified in the "Processing steps" section of the [README](https://github.com/Elborh/wearable-computing/blob/master/README.md) file.
 
 ## Tidy data set
 The output data set is put into the "tidy_grouped_data.txt" file. It contains 180 observations and 68 variables.
